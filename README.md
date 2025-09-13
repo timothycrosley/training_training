@@ -1,0 +1,1 @@
+This is a repo to enable me to experiment with training models locally for the first time on my gmktec evo-x2. It is not meant for usage by others.
