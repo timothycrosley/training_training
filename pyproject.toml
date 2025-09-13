@@ -29,4 +29,5 @@ explicit = true
 dev = [
     "ipython>=9.5.0",
     "notebook>=7.4.5",
+    "ruff>=0.13.0",
 ]
