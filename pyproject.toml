@@ -24,3 +24,9 @@ explicit = true
 "torchvision" = { index = "rocm" }
 "torchaudio" = { index = "rocm" }
 "pytorch-triton-rocm" = { index = "rocm" }
+
+[dependency-groups]
+dev = [
+    "ipython>=9.5.0",
+    "notebook>=7.4.5",
+]
