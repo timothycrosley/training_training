@@ -664,11 +664,12 @@ def main():
 
     # Configuration (platform would provide UI for this)
     config = TrainingConfig(
-        experiment_name="cifar10_resnet_demo",
-        batch_size=128,
+        experiment_name="cifar10_memory_safe",
+        batch_size=16,        # Very conservative
+        num_workers=1,        # Minimal parallel loading
         learning_rate=0.001,
-        epochs=20,  # Reduced for demo
-        early_stopping_patience=5,
+        epochs=5,             # Short test run first
+        log_frequency=50      # More frequent monitoring
     )
 
     print("Configuration:")
